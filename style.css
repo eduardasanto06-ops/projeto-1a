@@ -1,1 +1,43 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E PALETA DE CORES
+   ========================================================================== */
+:root {
+    --cor-principal: #2E7D32;       /* Verde Agro */
+    --cor-secundaria: #1565C0;      /* Azul Tecnologia */
+    --cor-fundo: #F5F7F8;           /* Cinza bem claro para o fundo */
+    --cor-card: #FFFFFF;            /* Branco para os cards */
+    --cor-texto: #333333;           /* Cinza escuro para leitura */
+    --cor-texto-suave: #666666;     /* Cinza médio para descrições */
+    --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ==========================================================================
+   2. SEÇÃO DE TECNOLOGIAS (GRID DINÂMICO DO JS)
+   ========================================================================== */
+#tech-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.tech-card {
+    background-color: var(--cor-card);
+    border-radius: 8px;
+    padding: 24px;
+    box-
